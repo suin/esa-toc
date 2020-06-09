@@ -1,0 +1,86 @@
+<!--suppress HtmlUnknownAttribute, HtmlDeprecatedAttribute, HtmlUnknownAnchorTarget -->
+<meta charset="UTF-8" />
+
+<p>h1の直下にh3が来るケース</p>
+
+<div id="input">
+  <h1 data-sourcepos="1:1-1:14" id="1-0-0" name="1-0-0">
+    <a
+      class="anchor"
+      id="h1見出しA"
+      name="h1%E8%A6%8B%E5%87%BA%E3%81%97A"
+      href="#h1%E8%A6%8B%E5%87%BA%E3%81%97A"
+      data-position="1-0-0"
+      ><i class="fa fa-link"></i
+      ><span class="hidden" data-text="h1見出しA"> &gt; h1見出しA</span></a
+    >h1見出しA
+  </h1>
+  <p style="height: 200px; background: gray;"></p>
+  <h3 data-sourcepos="5:1-5:18" id="1-0-1" name="1-0-1">
+    <a
+      class="anchor"
+      id="h3見出しA-B"
+      name="h3%E8%A6%8B%E5%87%BA%E3%81%97A-B"
+      href="#h3%E8%A6%8B%E5%87%BA%E3%81%97A-B"
+      data-position="1-0-1"
+      ><i class="fa fa-link"></i
+      ><span class="hidden" data-text="h3見出しA-B"> &gt; h3見出しA-B</span></a
+    >h3見出しA-B
+  </h3>
+  <p style="height: 200px; background: gray;"></p>
+  <h2 data-sourcepos="9:1-9:17" id="1-1-0" name="1-1-0">
+    <a
+      class="anchor"
+      id="h2見出しA-C"
+      name="h2%E8%A6%8B%E5%87%BA%E3%81%97A-C"
+      href="#h2%E8%A6%8B%E5%87%BA%E3%81%97A-C"
+      data-position="1-1-0"
+      ><i class="fa fa-link"></i
+      ><span class="hidden" data-text="h2見出しA-C"> &gt; h2見出しA-C</span></a
+    >h2見出しA-C
+  </h2>
+  <p style="height: 200px; background: gray;"></p>
+  <h3 data-sourcepos="13:1-13:20" id="1-1-1" name="1-1-1">
+    <a
+      class="anchor"
+      id="h3見出しA-C-D"
+      name="h3%E8%A6%8B%E5%87%BA%E3%81%97A-C-D"
+      href="#h3%E8%A6%8B%E5%87%BA%E3%81%97A-C-D"
+      data-position="1-1-1"
+      ><i class="fa fa-link"></i
+      ><span class="hidden" data-text="h3見出しA-C-D">
+        &gt; h3見出しA-C-D</span
+      ></a
+    >h3見出しA-C-D
+  </h3>
+  <p style="height: 200px; background: gray;"></p>
+</div>
+
+<script id="output" type="application/json">
+  [
+    {
+      "tag": "h1",
+      "depth": 1,
+      "text": "h1見出しA",
+      "href": "#h1%E8%A6%8B%E5%87%BA%E3%81%97A"
+    },
+    {
+      "tag": "h3",
+      "depth": 3,
+      "text": "h3見出しA-B",
+      "href": "#h3%E8%A6%8B%E5%87%BA%E3%81%97A-B"
+    },
+    {
+      "tag": "h2",
+      "depth": 2,
+      "text": "h2見出しA-C",
+      "href": "#h2%E8%A6%8B%E5%87%BA%E3%81%97A-C"
+    },
+    {
+      "tag": "h3",
+      "depth": 3,
+      "text": "h3見出しA-C-D",
+      "href": "#h3%E8%A6%8B%E5%87%BA%E3%81%97A-C-D"
+    }
+  ]
+</script>

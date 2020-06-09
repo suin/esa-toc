@@ -1,0 +1,80 @@
+<!--suppress HtmlUnknownAttribute, HtmlDeprecatedAttribute, HtmlUnknownAnchorTarget -->
+<meta charset="UTF-8" />
+
+<p>h1が使われず、h2から始まるケース</p>
+
+<div id="input">
+  <h2 data-sourcepos="1:1-1:13" id="0-1-0" name="0-1-0">
+    <a
+      class="anchor"
+      id="見出し1"
+      name="%E8%A6%8B%E5%87%BA%E3%81%971"
+      href="#%E8%A6%8B%E5%87%BA%E3%81%971"
+      data-position="0-1-0"
+      ><i class="fa fa-link"></i
+      ><span class="hidden" data-text="見出し1"> &gt; 見出し1</span></a
+    >見出し1
+  </h2>
+  <h3 data-sourcepos="2:1-2:16" id="0-1-1" name="0-1-1">
+    <a
+      class="anchor"
+      id="見出し1-1"
+      name="%E8%A6%8B%E5%87%BA%E3%81%971-1"
+      href="#%E8%A6%8B%E5%87%BA%E3%81%971-1"
+      data-position="0-1-1"
+      ><i class="fa fa-link"></i
+      ><span class="hidden" data-text="見出し1-1"> &gt; 見出し1-1</span></a
+    >見出し1-1
+  </h3>
+  <h2 data-sourcepos="3:1-3:13" id="0-2-0" name="0-2-0">
+    <a
+      class="anchor"
+      id="見出し2"
+      name="%E8%A6%8B%E5%87%BA%E3%81%972"
+      href="#%E8%A6%8B%E5%87%BA%E3%81%972"
+      data-position="0-2-0"
+      ><i class="fa fa-link"></i
+      ><span class="hidden" data-text="見出し2"> &gt; 見出し2</span></a
+    >見出し2
+  </h2>
+  <h3 data-sourcepos="4:1-4:16" id="0-2-1" name="0-2-1">
+    <a
+      class="anchor"
+      id="見出し2-1"
+      name="%E8%A6%8B%E5%87%BA%E3%81%972-1"
+      href="#%E8%A6%8B%E5%87%BA%E3%81%972-1"
+      data-position="0-2-1"
+      ><i class="fa fa-link"></i
+      ><span class="hidden" data-text="見出し2-1"> &gt; 見出し2-1</span></a
+    >見出し2-1
+  </h3>
+</div>
+
+<script id="output" type="application/json">
+  [
+    {
+      "tag": "h2",
+      "depth": 2,
+      "text": "見出し1",
+      "href": "#%E8%A6%8B%E5%87%BA%E3%81%971"
+    },
+    {
+      "tag": "h3",
+      "depth": 3,
+      "text": "見出し1-1",
+      "href": "#%E8%A6%8B%E5%87%BA%E3%81%971-1"
+    },
+    {
+      "tag": "h2",
+      "depth": 2,
+      "text": "見出し2",
+      "href": "#%E8%A6%8B%E5%87%BA%E3%81%972"
+    },
+    {
+      "tag": "h3",
+      "depth": 3,
+      "text": "見出し2-1",
+      "href": "#%E8%A6%8B%E5%87%BA%E3%81%972-1"
+    }
+  ]
+</script>
