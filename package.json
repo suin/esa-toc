@@ -1,6 +1,6 @@
 {
   "name": "@suin/esa-toc",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Generates table of contents from esa.io post HTML",
   "keywords": [],
   "homepage": "https://github.com/suin/esa-toc#readme",
